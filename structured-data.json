@@ -1,0 +1,24 @@
+{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "name": "Alfonso's Webpage",
+    "description": "Add a brief and relevant description of your website",
+    "author": {
+      "@type": "Person",
+      "name": "Alfonso Caio Espino"
+    },
+    "url": "https://www.yourwebsite.com",
+    "datePublished": "2024-06-19",
+    "inLanguage": "en",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.yourwebsite.com"
+        }
+      ]
+    }
+  }

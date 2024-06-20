@@ -1,0 +1,17 @@
+{
+  "name": "desktop_app",
+  "version": "1.0.0",
+  "description": "An all round great desktop app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . desktop_app --platform=win32 --arch=x64 --out=dist --overwrite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alfonso Caio Espino",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.9",
+    "electron-packager": "^17.1.2"
+  }
+}
