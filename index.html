@@ -1,78 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alfonso</title>
-    <link rel="icon" type="image/x-icon" href="IMG_2148.ico"><!--faviconA60outline.png-->
-    <meta name="description" content="Add a brief and relevant description of your website">
-    <meta name="author" content="Alfonso Caio Espino">
-    <meta name="google-site-verification" content="S0AskJCbvj7ANLuZFB3SzL_iukigx8OVYWh90FAskDM" />
-    <link rel="apple-touch-icon" href="IMG_2148.ico">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body id="body123" class="body321">
+    <link rel="icon" type="image/x-icon" href="IMG_2148.ico" />
+    <!--faviconA60outline.png-->
+    <meta
+      name="description"
+      content="Just a simple and useful website I made as a project to get better at web development. I hope you enjoy it!"
+    />
+    <meta name="author" content="Alfonso Caio Espino" />
+    <meta
+      name="google-site-verification"
+      content="S0AskJCbvj7ANLuZFB3SzL_iukigx8OVYWh90FAskDM"
+    />
+    <link rel="apple-touch-icon" href="IMG_2148.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body id="body123" class="body321">
     <header class="header">
-        <div class="container">
-            <h1>Alfonso's Webpage</h1>
-            <div id="current-time"></div>
-        </div>
+      <div class="container">
+        <h1>Home Page</h1>
+        <div id="current-time"></div>
+      </div>
     </header>
     <main>
-        <div class="container">
-					<form action="https://www.google.com/search" method="GET" id="googlegoogle">
-						<input type="text" name="q" placeholder="Search Google" id="googlesearch1" />
-						<input type="submit" value="Search" id="googlebutton1" />
-					</form>
-            
-        </div>
+      <div class="container">
+        <form
+          action="https://www.google.com/search"
+          method="GET"
+          id="googlegoogle"
+        >
+          <input
+            type="text"
+            name="q"
+            placeholder="Search Google"
+            id="googlesearch1"
+          />
+          <input type="submit" value="Search" id="googlebutton1" />
+        </form>
+      </div>
     </main>
     <aside id="sidebar" class="sidebar">
-        <div class="container">
-            <button class="sidebar-toggle" id="sidebar-toggle">Toggle Sidebar</button>
-		<button class="sidebar-toggle" id="x_button">X</button>
+      <div class="container">
+        <button class="sidebar-toggle" id="sidebar-toggle">
+          Toggle Sidebar
+        </button>
+        <button class="sidebar-toggle" id="x_button">X</button>
         <button id="mode-toggle">Light/Dark Mode</button>
-        <img src="IMG_2148.ico" alt="Sword Logo" id="Myswordlogo1234" width="70" height="70" class="sword_logo1">
-        <!-- Optional: Control buttons -->
-    <button onclick="toggleMute()" id="soundbutton1" class="soundbutton">Toggle Mute</button>
-    <button onclick="togglePlay()" id="soundbutton2" class="soundbutton">Toggle Play/Pause</button>
-            <nav>
-			<div id="search">
-                <input type="text" placeholder="Search...">
-                <ul id="search-results"></ul>
-            </div>
-			<form action="https://www.google.com/search" method="GET">
-				<input type="text" name="q" placeholder="Search Google" id="google_side" />
-				<input type="submit" value="Search" id="googleenter" />
-			</form>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">something</a></li>
-		    <li><a href="#">something</a></li>
-                </ul>
-            </nav>
-<pre id="credits" style="color: white;"><p><b>Background music:</b>
-Title: Portamento
-by: Nul Tiel Records
-Source: Free Music Archive
-License type: CC BY-NC-SA</p></pre>
-        </div>
+        <img
+          src="IMG_2148.ico"
+          alt="Sword Logo"
+          id="Myswordlogo1234"
+          width="70"
+          height="70"
+          class="sword_logo1"
+        />
+        <button id="soundbutton1" class="soundbutton">something</button>
+        <button id="soundbutton2" class="soundbutton">something</button>
+        <nav>
+          <div id="search">
+            <input type="text" placeholder="Search..." />
+            <ul id="search-results"></ul>
+          </div>
+          <form action="https://www.google.com/search" method="GET">
+            <input
+              type="text"
+              name="q"
+              placeholder="Search Google"
+              id="google_side"
+            />
+            <input type="submit" value="Search" id="googleenter" />
+          </form>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">something</a></li>
+            <li><a href="#">something</a></li>
+            <li><a href="#">something</a></li>
+            <li><a href="#">something</a></li>
+          </ul>
+        </nav>
+        <p id="credits" style="color: grey">By: Alfonso Caio Espino</p>
+      </div>
     </aside>
-
-	    <!-- Audio element for background music -->
-    <audio id="background-music" autoplay loop>
-        <source src="Nul Tiel Records - Portamento.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
 
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script type="application/ld+json" src="structured-data.json"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="application/ld+json" src="structured-data.json"></script>
+  </body>
 </html>
