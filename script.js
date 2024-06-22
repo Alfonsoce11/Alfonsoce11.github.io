@@ -134,3 +134,6 @@ document
   document.getElementById('closePopup2').addEventListener('click', function() {
     document.getElementById('popup2').style.display = 'none';
   });
+
+const newURL = 'Alfonso.com'`;
+window.history.pushState({ path: newURL }, '', newURL);
