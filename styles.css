@@ -213,17 +213,7 @@ body.light-mode .header {
   cursor: pointer;
 }
 
-#soundbutton1.soundbutton {
-  float: right !important;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: #222;
-  color: #fff;
-  border: none;
-  padding: 3px 6px;
-}
-
-#soundbutton2.soundbutton {
+.soundbutton {
   float: right !important;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -236,3 +226,17 @@ body.light-mode .header {
 #credits {
   bottom: 5px;
 }
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
