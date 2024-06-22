@@ -226,17 +226,3 @@ body.light-mode .header {
 #credits {
   bottom: 5px;
 }
-
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  padding: 20px;
-  background-color: #f4f4f4;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 2000;
-}
