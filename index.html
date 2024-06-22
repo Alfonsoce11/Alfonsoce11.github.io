@@ -65,8 +65,8 @@
           height="70"
           class="sword_logo1"
         />
-        <button id="soundbutton1" class="soundbutton">something</button>
-        <button id="soundbutton2" class="soundbutton">something</button>
+        <button id="openPopup" class="soundbutton">Sign In</button>
+        <button id="openPopup2" class="soundbutton">Register</button>
         <nav>
           <div id="search">
             <input type="text" placeholder="Search..." />
@@ -93,14 +93,46 @@
       </div>
     </aside>
 
+    <div class="popup">
+        <form id="loginForm">
+            <h2>User Sign-In</h2>
+            <div>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+              <button type="submit">Sign In</button>
+            </div>
+          </form>
+        <button id="closePopup">Close</button>
+      </div>
+
+      <div class="popup">
+        <form id="registrationForm">
+            <h2>User Registration</h2>
+            <div>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+              <button type="submit">Register</button>
+            </div>
+          </form>
+        <button id="closePopup2">Close</button>
+      </div>
+
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script type="application/ld+json" src="structured-data.json"></script>
-
-
-
-
   </body>
 </html>
