@@ -95,6 +95,12 @@ let userName; // Declare the variable outside of the function
 
 function EnterName() {
   userName = prompt("Please enter your user name:"); // Assign a value to the variable inside the function
+  console.log(userName);
+  greetUser();
 }
 
 document.getElementById("EnterYourName").addEventListener("click", EnterName); // Call the function when the button is clicked
+
+function greetUser() {
+  document.getElementById("greetUser").innerHTML = "Hello, " + userName + "!";
+}
