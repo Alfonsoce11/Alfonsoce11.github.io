@@ -97,6 +97,7 @@ function EnterName() {
   userName = prompt("Please enter your user name:"); // Assign a value to the variable inside the function
   console.log(userName);
   greetUser();
+  document.getElementById("EnterYourName").innerHTML = "Use Different Name";
 }
 
 document.getElementById("EnterYourName").addEventListener("click", EnterName); // Call the function when the button is clicked
