@@ -114,10 +114,15 @@ document.getElementById('createShortcutForm').addEventListener('submit', functio
   var url = document.getElementById('shortcutUrl').value;
   var name = document.getElementById('shortcutName').value;
 
+    // Add protocol if not provided
+    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+      url = 'https://' + url;
+    }
+
   // Create a new link element
   var link = document.createElement('a');
   link.href = url;
-  link.target = '_blank';
+  link.target = '_self';
   link.textContent = name;
 
   // Append the link to the shortcuts section
