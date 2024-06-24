@@ -105,3 +105,25 @@ document.getElementById("EnterYourName").addEventListener("click", EnterName); /
 function greetUser() {
   document.getElementById("greetUser").innerHTML = "Hello, " + userName + "!";
 }
+
+
+
+document.getElementById('createShortcutForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var url = document.getElementById('shortcutUrl').value;
+  var name = document.getElementById('shortcutName').value;
+
+  // Create a new link element
+  var link = document.createElement('a');
+  link.href = url;
+  link.target = '_blank';
+  link.textContent = name;
+
+  // Append the link to the shortcuts section
+  document.getElementById('shortcuts').appendChild(link);
+
+  // Clear the form inputs
+  document.getElementById('shortcutUrl').value = '';
+  document.getElementById('shortcutName').value = '';
+});
