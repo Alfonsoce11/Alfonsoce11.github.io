@@ -234,3 +234,13 @@ body.light-mode .credits {
 #credits {
   bottom: 5px;
 }
+
+#shortcutUrl {
+  background-color: #444;
+  color: #fff;
+}
+
+#shortcutName {
+  background-color: #444;
+  color: #fff;
+}
