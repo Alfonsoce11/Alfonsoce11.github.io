@@ -199,7 +199,7 @@ body.light-mode {
 }
 
 body.light-mode .sidebar {
-  background-color: white !important;
+  background-color: lightgrey !important;
   color: #000000 !important;
 }
 
