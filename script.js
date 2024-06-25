@@ -106,29 +106,29 @@ function greetUser() {
   document.getElementById("greetUser").innerHTML = "Hello, " + userName + "!";
 }
 
+document
+  .getElementById("createShortcutForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-
-document.getElementById('createShortcutForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  var url = document.getElementById('shortcutUrl').value;
-  var name = document.getElementById('shortcutName').value;
+    var url = document.getElementById("shortcutUrl").value;
+    var name = document.getElementById("shortcutName").value;
 
     // Add protocol if not provided
-    if (!url.startsWith('http://') && !url.startsWith('https://')) {
-      url = 'https://' + url;
+    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+      url = "https://" + url;
     }
 
-  // Create a new link element
-  var link = document.createElement('a');
-  link.href = url;
-  link.target = '_self';
-  link.textContent = name;
+    // Create a new link element
+    var link = document.createElement("a");
+    link.href = url;
+    link.target = "_self";
+    link.textContent = name;
 
-  // Append the link to the shortcuts section
-  document.getElementById('shortcuts').appendChild(link);
+    // Append the link to the shortcuts section
+    document.getElementById("shortcuts").appendChild(link);
 
-  // Clear the form inputs
-  document.getElementById('shortcutUrl').value = '';
-  document.getElementById('shortcutName').value = '';
-});
+    // Clear the form inputs
+    document.getElementById("shortcutUrl").value = "";
+    document.getElementById("shortcutName").value = "";
+  });
