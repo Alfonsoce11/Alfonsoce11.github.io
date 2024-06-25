@@ -126,7 +126,12 @@ document
     link.textContent = name;
 
     // Append the link to the shortcuts section
-    document.getElementById("shortcuts").appendChild(link);
+    var shortcuts = document.getElementById("shortcuts");
+    if (shortcuts.children.length > 0) {
+      var newLine = document.createElement("br");
+      shortcuts.appendChild(newLine);
+    }
+    shortcuts.appendChild(link);
 
     // Clear the form inputs
     document.getElementById("shortcutUrl").value = "";
