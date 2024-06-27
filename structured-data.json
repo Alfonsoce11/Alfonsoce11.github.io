@@ -2,7 +2,7 @@
     "@context": "http://schema.org",
     "@type": "WebPage",
     "name": "Alfonso's Webpage",
-    "description": "Add a brief and relevant description of your website",
+    "description": "Just a simple and useful website I made as a project to get better at web development. I hope you enjoy it!",
     "author": {
       "@type": "Person",
       "name": "Alfonso Caio Espino"
