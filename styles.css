@@ -249,6 +249,10 @@ body.light-mode .credits {
   background-color: #222;
   color: #fff;
   border: none;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .deleteButton {
@@ -256,4 +260,8 @@ body.light-mode .credits {
   background-color: #222;
   color: #fff;
   border: none;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
