@@ -44,8 +44,8 @@ main section {
 #sidebar {
   position: fixed;
   top: 0;
-  left: -260px;
-  width: 260px;
+  left: -270px;
+  width: 270px;
   height: 100%;
   background-color: #111;
   padding-top: 20px;
