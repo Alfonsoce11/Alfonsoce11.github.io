@@ -91,6 +91,14 @@ modeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
 
+// Add an event listener to the localStorage object
+window.addEventListener('storage', function(event) {
+  if (event.key === 'savedUsername') {
+    savedUsername = event.newValue;
+    greetUser();
+  }
+});
+
 let userName; // Declare the variable outside of the function
 let savedUsername;
 function EnterName() {
