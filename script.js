@@ -91,24 +91,33 @@ modeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
 
+document.getElementById("EnterYourName").addEventListener("click", EnterName); // Call the function when the button is clicked
+
 let userName; // Declare the variable outside of the function
-let savedUsername = localStorage.getItem('savedUsername');
+
 function EnterName() {
   userName = prompt("Enter your user name:"); // Assign a value to the variable inside the function
   console.log(userName);
-  greetUser();
-  document.getElementById("EnterYourName").innerHTML = "Change Name";
-  // Save to local storage
-  localStorage.setItem('savedUsername', userName);
-  console.log(localStorage.getItem('savedUsername'));
-  console.log(savedUsername);
+  if (userName) {
+    document.getElementById("EnterYourName").innerHTML = "Change Name";
+    // Save to local storage
+    localStorage.setItem('savedUsername', userName);
+    console.log(savedUsername);
+    greetUser();
+  }
 }
 
-document.getElementById("EnterYourName").addEventListener("click", EnterName); // Call the function when the button is clicked
+let savedUsername = localStorage.getItem('savedUsername');
 
 function greetUser() {
-  document.getElementById("greetUser").innerHTML = "Hello, " + localStorage.getItem('savedUsername') + "!";
+  if (savedUsername) {
+    document.getElementById("greetUser").innerHTML = "Hello, " + savedUsername + "!";
+  }
 }
+
+greetUser();
+
+console.log(savedUsername)
 
 document
   .getElementById("createShortcutForm")
