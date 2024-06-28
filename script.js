@@ -92,12 +92,14 @@ modeToggle.addEventListener("click", () => {
 });
 
 let userName; // Declare the variable outside of the function
-
+let savedUsername;
 function EnterName() {
   userName = prompt("Enter your user name:"); // Assign a value to the variable inside the function
   console.log(userName);
   greetUser();
   document.getElementById("EnterYourName").innerHTML = "Change Name";
+  // Save to local storage
+  localStorage.setItem('savedUsername', userName);
 }
 
 document.getElementById("EnterYourName").addEventListener("click", EnterName); // Call the function when the button is clicked
