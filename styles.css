@@ -70,13 +70,9 @@ main section {
   margin-top: 20px;
 }
 
-#search input {
-  width: 100%;
-  padding: 8px;
-  border: none;
-  background-color: #444;
-  color: #fff;
+#googleSearchBarAndInput {
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 #google_side {
