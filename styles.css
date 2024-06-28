@@ -244,3 +244,14 @@ body.light-mode .credits {
   background-color: #444;
   color: #fff;
 }
+
+#inputShortcutData {
+  background-color: #222;
+  color: #fff;
+}
+
+.deleteButton {
+  float: right !important;
+  background-color: #222;
+  color: #fff;
+}
