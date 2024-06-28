@@ -164,7 +164,9 @@ function renderShortcuts() {
     deleteButton.className = "deleteButton";
 
     var newLine = document.createElement("br");
+    var newLine2 = document.createElement("br");
     shortcutsContainer.appendChild(newLine);
+    shortcutsContainer.appendChild(newLine2);
   });
 }
 
