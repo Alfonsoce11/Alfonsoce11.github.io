@@ -105,7 +105,7 @@ function EnterName() {
 document.getElementById("EnterYourName").addEventListener("click", EnterName); // Call the function when the button is clicked
 
 function greetUser() {
-  document.getElementById("greetUser").innerHTML = "Hello, " + userName + "!";
+  document.getElementById("greetUser").innerHTML = "Hello, " + savedUsername + "!";
 }
 
 document
