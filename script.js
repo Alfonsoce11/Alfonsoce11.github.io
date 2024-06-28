@@ -91,16 +91,8 @@ modeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
 
-// Add an event listener to the localStorage object
-window.addEventListener('storage', function(event) {
-  if (event.key === 'savedUsername') {
-    savedUsername = event.newValue;
-    greetUser();
-  }
-});
-
 let userName; // Declare the variable outside of the function
-let savedUsername;
+let savedUsername = localStorage.getItem('savedUsername');
 function EnterName() {
   userName = prompt("Enter your user name:"); // Assign a value to the variable inside the function
   console.log(userName);
@@ -108,12 +100,14 @@ function EnterName() {
   document.getElementById("EnterYourName").innerHTML = "Change Name";
   // Save to local storage
   localStorage.setItem('savedUsername', userName);
+  console.log(localStorage.getItem('savedUsername'));
+  console.log(savedUsername);
 }
 
 document.getElementById("EnterYourName").addEventListener("click", EnterName); // Call the function when the button is clicked
 
 function greetUser() {
-  document.getElementById("greetUser").innerHTML = "Hello, " + savedUsername + "!";
+  document.getElementById("greetUser").innerHTML = "Hello, " + localStorage.getItem('savedUsername') + "!";
 }
 
 document
