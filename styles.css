@@ -47,7 +47,7 @@ main section {
   left: -270px;
   width: 270px;
   height: 100%;
-  background-color: #111;
+  background-color: #E0F7FA;
   padding-top: 20px;
   transition: left 0.3s ease-in-out;
   overflow: auto;
