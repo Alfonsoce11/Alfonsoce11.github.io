@@ -218,13 +218,13 @@ body.light-mode .credits {
 }
 
 .soundbutton {
-  float: right !important;
   margin-top: 5px;
   margin-bottom: 5px;
   background-color: #222;
   color: #fff;
   border: none;
   padding: 3px 6px;
+  clear: right !important;
 }
 
 #credits {
