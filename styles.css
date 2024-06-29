@@ -104,7 +104,7 @@ main section {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 9000;
 }
 
 #x_button {
