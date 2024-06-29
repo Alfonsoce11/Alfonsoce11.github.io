@@ -224,7 +224,14 @@ body.light-mode .credits {
   color: #fff;
   border: none;
   padding: 3px 6px;
-  clear: right !important;
+}
+
+#EnterYourName {
+  float: right;
+}
+
+#openPopup2 {
+clear: right;
 }
 
 #credits {
