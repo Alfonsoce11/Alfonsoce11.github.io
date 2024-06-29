@@ -215,6 +215,7 @@ body.light-mode .credits {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  display: block !important;
 }
 
 .soundbutton {
