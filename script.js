@@ -160,3 +160,34 @@ function deleteShortcut(index) {
 document.addEventListener("DOMContentLoaded", function () {
   renderShortcuts();
 });
+
+document.getElementById('searchEngine').addEventListener('change', saveSearchEngine);
+
+        // Save the selected search engine to local storage
+        function saveSearchEngine() {
+          const engine = document.getElementById('searchEngine').value;
+          localStorage.setItem('preferredSearchEngine', engine);
+          updateFormAction();
+      }
+
+      // Load the saved search engine from local storage
+      function loadSearchEngine() {
+          const savedEngine = localStorage.getItem('preferredSearchEngine');
+          if (savedEngine) {
+              document.getElementById('searchEngine').value = savedEngine;
+              updateFormAction();
+          }
+      }
+
+      // Update the form action based on the selected search engine
+      function updateFormAction() {
+          const savedEngine = localStorage.getItem('preferredSearchEngine');
+          const engine = document.getElementById('searchEngine').value;
+
+          document.querySelectorAll("form.search").forEach(form => {
+            form.action = engine;
+        });
+      }
+
+      // Load the preferred search engine when the page loads
+      window.onload = loadSearchEngine;

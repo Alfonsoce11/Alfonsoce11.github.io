@@ -35,15 +35,11 @@
     </header>
     <main>
       <div class="container">
-        <form
-          action="https://www.google.com/search"
-          method="GET"
-          id="googlegoogle"
-        >
+        <form action="" method="GET" id="googlegoogle" class="search">
           <input
             type="text"
             name="q"
-            placeholder="Search Google"
+            placeholder="Search..."
             id="googlesearch1"
           />
           <input type="submit" value="Search" id="googlebutton1" />
@@ -69,16 +65,21 @@
         <button id="openPopup2" class="soundbutton">something</button>
         <nav>
           <div id="googleSearchBarAndInput">
-          <form action="https://www.google.com/search" method="GET">
+          <form action="" method="GET" class="search">
             <input
               type="text"
               name="q"
-              placeholder="Search Google"
+              placeholder="Search..."
               id="google_side"
             />
             <input type="submit" value="Search" id="googleenter" />
           </form>
         </div>
+        <select id="searchEngine" title="Choose a search engine">
+          <option value="https://www.google.com/search">Google</option>
+          <option value="https://www.bing.com/search">Bing</option>
+          <option value="https://search.yahoo.com/search">Yahoo</option>
+        </select>
           <p id="greetUser"></p>
 
           <form id="createShortcutForm">
