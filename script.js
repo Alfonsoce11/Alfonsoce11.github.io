@@ -20,6 +20,7 @@ function displayCurrentTime() {
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
   sidebar.classList.toggle("open");
+  document.getElementById("sidebar-toggle").classList.toggle("sidebar-toggle-close")
 }
 
 
@@ -36,6 +37,7 @@ document.addEventListener("click", function (event) {
 
   if (!sidebar.contains(event.target) && event.target !== toggleButton) {
     sidebar.classList.remove("open");
+    document.getElementById("sidebar-toggle").classList.remove("sidebar-toggle-close")
   }
 });
 
