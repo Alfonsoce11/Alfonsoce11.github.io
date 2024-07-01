@@ -193,6 +193,10 @@ body.dark-mode .credits {
   color: #ffffff !important;
 }
 
+body.dark-mode #sidebar-toggle {
+  color: #fff;
+}
+
 /* Light Mode Styles */
 body.light-mode {
   background-color: #ffffff !important;
@@ -211,6 +215,10 @@ body.light-mode .header {
 
 body.light-mode .credits {
   color: #000000 !important;
+}
+
+body.light-mode #sidebar-toggle {
+  color: #000000;
 }
 
 #mode-toggle {
