@@ -68,9 +68,19 @@ function togglePlay() {
 // Light/Dark Mode Toggle
 const modeToggle = document.getElementById("mode-toggle");
 modeToggle.addEventListener("click", () => {
+  const isLightMode = document.body.classList.contains("light-mode");
+  localStorage.setItem("mode", isLightMode ? "light" : "dark");
   document.body.classList.toggle("light-mode");
   document.body.classList.toggle("dark-mode");
 });
+
+// Load the saved mode from local storage
+const savedMode = localStorage.getItem("mode");
+if (savedMode === "light") {
+  document.body.classList.add("light-mode");
+} else if (savedMode === "dark") {
+  document.body.classList.add("dark-mode");
+}
 
 document.getElementById("EnterYourName").addEventListener("click", EnterName); // Call the function when the button is clicked
 
