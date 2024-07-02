@@ -107,6 +107,7 @@ main section {
   z-index: 9000;
   font-size: 40px;
   display: block !important;
+  visibility: visible !important;
 }
 #sidebar-toggle.sidebar-toggle-close {
   left: 275px;
