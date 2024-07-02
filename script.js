@@ -68,8 +68,8 @@ function togglePlay() {
 // Light/Dark Mode Toggle
 const modeToggle = document.getElementById("mode-toggle");
 modeToggle.addEventListener("click", () => {
-  const isLightMode = document.body.classList.contains("light-mode");
-  localStorage.setItem("mode", isLightMode ? "light" : "dark");
+  const isDarkMode = document.body.classList.contains("dark-mode");
+  localStorage.setItem("mode", isDarkMode ? "dark" : "light");
   document.body.classList.toggle("light-mode");
   document.body.classList.toggle("dark-mode");
 });
