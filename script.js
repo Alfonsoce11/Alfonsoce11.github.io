@@ -76,11 +76,11 @@ modeToggle.addEventListener("click", () => {
 
 // Load the saved mode from local storage
 const savedMode = localStorage.getItem("mode");
-if (savedMode === "light") {
-  document.body.classList.add("light-mode");
-} else if (savedMode === "dark") {
+ if (savedMode === "dark") {
   document.body.classList.add("dark-mode");
-}
+} else if (savedMode === "light") {
+  document.body.classList.add("light-mode");
+} 
 
 document.getElementById("EnterYourName").addEventListener("click", EnterName); // Call the function when the button is clicked
 
