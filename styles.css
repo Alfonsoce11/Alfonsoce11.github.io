@@ -10,7 +10,7 @@
   background-color: #222;
   color: #ffffff;
   line-height: 1.6;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -30,7 +30,7 @@ header h1 {
   margin-bottom: 10px;
 }
 
-main {
+#main1 {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
@@ -51,6 +51,7 @@ main section {
   padding-top: 20px;
   transition: left 0.3s ease-in-out;
   overflow: auto;
+  z-index: 500;
 }
 
 #sidebar.open {
@@ -222,6 +223,9 @@ body.light-mode .credits {
 body.light-mode #sidebar-toggle {
   color: #000000;
 }
+body.light-mode #about {
+  color: white;
+}
 
 #mode-toggle {
   float: left;
@@ -247,6 +251,9 @@ body.light-mode #sidebar-toggle {
   
 }
 
+#MainSection1 {
+  height: 100vh;
+}
 
 
 #credits {
@@ -280,4 +287,253 @@ body.light-mode #sidebar-toggle {
 
 #myGitHub {
   text-align: center;
+}
+
+
+#navBar2 {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 100vw;
+  background: darkslategrey;
+  z-index: 100;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+}
+.nav-link:first-of-type {
+  margin-left: 20%;
+}
+.nav-link:hover {
+  background: grey;
+}
+#navbar2 {
+  width: auto;
+  display: flex;
+  justify-content: left;
+}
+
+
+#welcome-section {
+  display: flex;
+  height: 100vh;
+  background: darkslategrey;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+#main2 {
+  background: black;
+  min-height: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.greeting {
+  font-family: sans-serif;
+  font-size: 6rem; 
+  /* 
+  rem is relative to the root font-size and em is relative to the parent elements font size. 1rem is equal to root font size times 1. So 2rem would be: root font size * 2. And 2em would be parent font-size * 2.
+  */
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 740px) {
+  .greeting {
+    font-size: 5.8rem
+  }
+}
+@media (max-width: 700px) {
+  .greeting {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .greeting {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 570px) {
+  .greeting {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 520px) {
+  .greeting {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 460px) {
+  .greeting {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 410px) {
+  .greeting {
+    font-size: 3rem;
+  }
+}
+#projects {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+#about {
+  background: black;
+  margin-top: 0;
+}
+.project-tile {
+  background: black;
+  height: 300px;
+  width: 300px;
+  box-shadow: 0 0 10px 5px white;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-direction: column;
+  transition: 0.5s linear;
+  color: white;
+  text-decoration: none;
+}
+.project-tile:hover {
+  animation: enlarge-projects linear 0.5s;
+  height: 400px;
+  width: 400px;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+@keyframes enlarge-projects {
+  0% {
+    height: 300px;
+    width: 300px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+  100% {
+    height: 400px;
+    width: 400px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+}
+footer {
+  background: darkslategrey;
+}
+#contact {
+  background: darkslategrey;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@keyframes enlargeText {
+  0% {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  }
+  100% {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+  }
+}
+.profile-link {
+  font-size: 2rem;
+  transition: 0.3s linear;
+  color: white;
+  text-decoration: none;
+}
+
+.profile-link:hover {
+  animation: enlargeText linear 0.3s;
+  font-size: 3rem;
+}
+.project-img {
+  width: 100%;
+  height: 70%;
+  align-self: flex-start;
+  justify-self: center;
+}
+.projects-desc {
+  width: 100%;
+  height: 30%;
+  background: darkslategrey;
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+.accountsHeading {
+  padding-top: 40px
+}
+.projectsLink {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.projectsLink:hover {
+  text-decoration: none;
+  color: white;
+}
+#about {
+  margin: auto;
+  max-width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+#aboutMeSection1 {
+  position: absolute;
+  top: 100vh;
+  background: black;
+}
+
+
+.scrollDown {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  justify-self: center;
+  width: 100%;
+  animation: hideAndUnhide 2s infinite;
+}
+
+.scrollDownParagraph {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@keyframes hideAndUnhide {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }

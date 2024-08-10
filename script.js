@@ -209,3 +209,7 @@ document.getElementById('searchEngine').addEventListener('change', saveSearchEng
 
       // Load the preferred search engine when the page loads
       window.onload = loadSearchEngine;
+
+      document.querySelector("body").onscroll = () => {
+        document.querySelector(".scrollDown").style.display = "none";
+      }
