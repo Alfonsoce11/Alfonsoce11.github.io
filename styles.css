@@ -405,12 +405,12 @@ body.light-mode #about {
   border-radius: 20px;
   overflow: hidden;
   flex-direction: column;
-  transition: 0.5s linear;
+  transition: 0.2s linear;
   color: white;
   text-decoration: none;
 }
 .project-tile:hover {
-  animation: enlarge-projects linear 0.5s;
+  animation: enlarge-projects linear 0.2s;
   height: 400px;
   width: 400px;
   font-size: 1.5rem;
@@ -536,4 +536,7 @@ footer {
   100% {
     opacity: 100%;
   }
+}
+.textDecorNone {
+  text-decoration: none;
 }
