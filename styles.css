@@ -537,6 +537,12 @@ footer {
     opacity: 100%;
   }
 }
+
+.donate-widget {
+position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
 .textDecorNone {
   text-decoration: none;
 }
