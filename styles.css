@@ -271,6 +271,10 @@ body.light-mode #contact {
   background: #f4f4f4;
   color: black;
 }
+body.light-mode .profile-link {
+  background: #f4f4f4;
+  color: black;
+}
 /* TEST CODE ENDS HERE */
 
 #mode-toggle {
