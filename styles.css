@@ -226,6 +226,23 @@ body.light-mode #sidebar-toggle {
 body.light-mode #about {
   color: white;
 }
+/* TEST CODE STARTS HERE*/
+body.light-mode #projects {
+  background: white;
+  color: black;
+}
+
+body.light-mode #about {
+  background: white;
+  color: black;
+}
+
+body.light-mode .project-tile {
+  background: white;
+  color: black;
+  box-shadow: 0 0 10px 5px gray;
+}
+/* TEST CODE ENDS HERE */
 
 #mode-toggle {
   float: left;
