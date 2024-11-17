@@ -207,7 +207,7 @@ body.light-mode {
 }
 
 body.light-mode .sidebar {
-  background: darkslategrey !important;
+  background: grey !important;
   color: #000000 !important;
 }
 
