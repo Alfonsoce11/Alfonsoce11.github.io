@@ -207,7 +207,7 @@ body.light-mode {
 }
 
 body.light-mode .sidebar {
-  background-color: #f5f5f5 !important;
+  background-color: #f3f3f3 !important;
   color: #000000 !important;
 }
 
@@ -244,6 +244,14 @@ body.light-mode .project-tile {
 }
 body.light-mode #welcome-section {
   background: #f4f4f4;
+  color: black;
+}
+body.light-mode .greeting {
+  color: black;
+  background: #f4f4f4;
+}
+body.light-mode #main2 {
+  background: white;
   color: black;
 }
 /* TEST CODE ENDS HERE */
