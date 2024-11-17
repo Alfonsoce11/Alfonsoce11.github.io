@@ -267,6 +267,10 @@ body.light-mode #about {
   background: white;
   color: black;
 }
+body.light-mode #contact {
+  background: #f4f4f4;
+  color: black;
+}
 /* TEST CODE ENDS HERE */
 
 #mode-toggle {
