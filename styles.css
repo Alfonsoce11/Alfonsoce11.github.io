@@ -275,6 +275,10 @@ body.light-mode .profile-link {
   background: #f4f4f4;
   color: black;
 }
+body.light-mode #aboutMeSection1 {
+  background: white;
+  color: black;
+}
 /* TEST CODE ENDS HERE */
 
 #mode-toggle {
@@ -588,11 +592,6 @@ footer {
   }
 }
 
-.donate-widget {
-position: absolute;
-  right: 20px;
-  bottom: 20px;
-}
 .textDecorNone {
   text-decoration: none;
 }
