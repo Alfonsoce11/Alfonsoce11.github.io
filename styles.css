@@ -207,7 +207,7 @@ body.light-mode {
 }
 
 body.light-mode .sidebar {
-  background-color: #f3f3f3 !important;
+  background-color: #fafafa !important;
   color: #000000 !important;
 }
 
@@ -253,6 +253,12 @@ body.light-mode .greeting {
 body.light-mode #main2 {
   background: white;
   color: black;
+}
+body.light-mode #navBar2 {
+  background: #f4f4f4;
+}
+body.light-mode #navbar2 {
+  background: #f4f4f4;
 }
 /* TEST CODE ENDS HERE */
 
