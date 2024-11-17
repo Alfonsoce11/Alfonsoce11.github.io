@@ -207,8 +207,8 @@ body.light-mode {
 }
 
 body.light-mode .sidebar {
-  background-color: #fafafa !important;
-  color: #000000 !important;
+  background-color: darkslategray;
+  color: #000000;
 }
 
 body.light-mode .header {
