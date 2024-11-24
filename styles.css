@@ -615,7 +615,7 @@ footer {
   position: relative;
   z-index: 1000;
   position: fixed;
-  top: -10px;
+  top: 5px;
   left: 5px;
 }
 .menu-button.sidebar-toggle-close {
