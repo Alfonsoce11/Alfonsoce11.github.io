@@ -206,10 +206,11 @@ body.light-mode {
   color: #000000 !important;
 }
 
+/*
 body.light-mode .sidebar {
   background: grey !important;
   color: #000000 !important;
-}
+} */
 
 body.light-mode .header {
   background-color: #f4f4f4 !important;
