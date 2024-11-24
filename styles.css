@@ -284,7 +284,8 @@ body.light-mode #aboutMeSection1 {
 #mode-toggle {
   background-color: #222;
   color: #fff;
-  padding: 10px 55px;
+  padding: 10px 0px;
+  width: 100%;
   margin: auto;
   border: none;
   cursor: pointer;
