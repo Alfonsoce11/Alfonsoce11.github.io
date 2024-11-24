@@ -199,8 +199,8 @@ body.dark-mode .credits {
 body.dark-mode #sidebar-toggle {
   color: #fff;
 }
-body.dark-mode .menu-button {
-  color: #fff;
+body.dark-mode .menu-button .line {
+  background: #fff;
 }
 
 /* Light Mode Styles */
@@ -283,8 +283,8 @@ body.light-mode #aboutMeSection1 {
   background: white;
   color: black;
 }
-body.light-mode .menu-button {
-  color: black;
+body.light-mode .menu-button .line {
+  background: black;
 }
 
 
