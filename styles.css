@@ -639,6 +639,11 @@ footer {
 }
 
 /* Open state */
+.menu-button.openButton {
+  left: 275px;
+  transition: left 0.3s ease-in-out;
+}
+
 .menu-button.openButton .line:nth-child(1) {
   transform: translateY(9.5px) rotate(45deg);
 }
