@@ -620,7 +620,7 @@ footer {
   cursor: pointer;
   z-index: 1000;
   position: fixed;
-  top: 5px;
+  top: 10px;
   left: 5px;
   transition: left 0.3s ease-in-out;
 }
