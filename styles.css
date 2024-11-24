@@ -49,7 +49,7 @@ main section {
   height: 100%;
   background-color: #111;
   padding-top: 20px;
-  transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out; /* This will make the sidebar slide in and out smoothly */
   overflow: auto;
   z-index: 500;
 }
@@ -553,7 +553,7 @@ footer {
 }
 #about {
   margin: auto;
-  max-width: 500px;
+  width: 80%;
   margin-top: 50px;
   margin-bottom: 50px;
 }
