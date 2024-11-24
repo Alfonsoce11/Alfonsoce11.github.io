@@ -37,7 +37,9 @@ document.addEventListener("click", function (event) {
 
   if (!sidebar.contains(event.target) && event.target !== toggleButton) {
     sidebar.classList.remove("open");
-    document.getElementsByClassName("menu-button").classList.remove("sidebar-toggle-close")
+    document.getElementById("menu-button").classList.remove("sidebar-toggle-close")
+    document.getElementById("menu-button").classList.toggle("openButton");
+    )
   }
 });
 
