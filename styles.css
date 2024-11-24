@@ -199,6 +199,9 @@ body.dark-mode .credits {
 body.dark-mode #sidebar-toggle {
   color: #fff;
 }
+body.dark-mode #menu-button {
+  color: #fff;
+}
 
 /* Light Mode Styles */
 body.light-mode {
@@ -278,6 +281,9 @@ body.light-mode .profile-link {
 }
 body.light-mode #aboutMeSection1 {
   background: white;
+  color: black;
+}
+body.light-mode #menu-button {
   color: black;
 }
 
@@ -612,11 +618,11 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  position: relative;
   z-index: 1000;
   position: fixed;
   top: 5px;
   left: 5px;
+  transition: left 0.3s ease-in-out;
 }
 #menu-button.sidebar-toggle-close {
   left: 275px;
