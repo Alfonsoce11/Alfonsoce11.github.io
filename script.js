@@ -213,3 +213,7 @@ document.getElementById('searchEngine').addEventListener('change', saveSearchEng
       document.querySelector("body").onscroll = () => {
         document.querySelector(".scrollDown").style.display = "none";
       }
+
+      document.getElementById('menu-button').addEventListener('click', function () {
+        this.classList.toggle('openButton');
+      });
