@@ -226,7 +226,7 @@ body.light-mode #sidebar-toggle {
 body.light-mode #about {
   color: white;
 }
-/* TEST CODE STARTS HERE*/
+
 body.light-mode #projects {
   background: white;
   color: black;
@@ -279,10 +279,9 @@ body.light-mode #aboutMeSection1 {
   background: white;
   color: black;
 }
-/* TEST CODE ENDS HERE */
+
 
 #mode-toggle {
-  float: left;
   background-color: #222;
   color: #fff;
   padding: 10px 20px;
