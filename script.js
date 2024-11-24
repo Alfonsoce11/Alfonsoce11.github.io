@@ -111,6 +111,9 @@ function greetUser() {
   if (savedUsername) {
     document.getElementById("greetUser").innerHTML = "Hello, " + savedUsername + "!";
   }
+  if (savedUsername) {
+    document.getElementById("EnterYourName").innerHTML = "Change Name";
+  }
 }
 
 greetUser();
