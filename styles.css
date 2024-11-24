@@ -618,7 +618,7 @@ footer {
   top: 5px;
   left: 5px;
 }
-.menu-button.sidebar-toggle-close {
+#menu-button.sidebar-toggle-close {
   left: 275px;
   transition: left 0.3s ease-in-out;
 }
