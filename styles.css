@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-#body123.body321 {
+#body123.body123 {
   font-family: Arial, sans-serif;
   background-color: #222;
   color: #ffffff;
@@ -322,9 +322,6 @@ body.light-mode .menu-button .line {
   float: right;
 }
 
-#EnterYourName {
-  
-}
 
 #MainSection1 {
   height: 100vh;
@@ -367,7 +364,7 @@ body.light-mode .menu-button .line {
 
 #navBar2 {
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -376,11 +373,13 @@ body.light-mode .menu-button .line {
   background: darkslategrey;
   z-index: 100;
   align-items: center;
+  justify-content: right;
 }
 .nav-link {
   text-decoration: none;
   padding: 10px;
   margin: 5px;
+  border-radius: 10px;
 }
 .nav-link:first-of-type {
   margin-left: 20%;
@@ -391,7 +390,8 @@ body.light-mode .menu-button .line {
 #navbar2 {
   width: auto;
   display: flex;
-  justify-content: left;
+  justify-content: right;
+
 }
 
 
@@ -417,12 +417,13 @@ body.light-mode .menu-button .line {
   rem is relative to the root font-size and em is relative to the parent elements font size. 1rem is equal to root font size times 1. So 2rem would be: root font size * 2. And 2em would be parent font-size * 2.
   */
   text-align: center;
+  margin-top: 20px
 }
 
 
 
 
-@media (max-width: 740px) {
+@media (max-width: 744px) {
   .greeting {
     font-size: 5.8rem
   }
@@ -472,7 +473,7 @@ body.light-mode .menu-button .line {
   background: black;
   height: 300px;
   width: 300px;
-  box-shadow: 0 0 10px 5px white;
+  box-shadow: 0 0 5px 10px white;
   margin-bottom: 40px;
   margin-left: 20px;
   margin-right: 20px;
@@ -611,7 +612,7 @@ footer {
     opacity: 100%;
   }
   50% {
-    opacity: 0%;
+    opacity: 25%;
   }
   100% {
     opacity: 100%;

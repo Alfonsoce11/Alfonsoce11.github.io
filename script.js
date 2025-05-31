@@ -46,25 +46,6 @@ document.addEventListener("click", function (event) {
 displayCurrentTime();
 setInterval(displayCurrentTime, 1000); // Update time every second
 
-const audio = document.getElementById("background-music");
-
-// Example: Mute/unmute functionality
-function toggleMute() {
-  if (audio.muted) {
-    audio.muted = false;
-  } else {
-    audio.muted = true;
-  }
-}
-
-// Example: Pause/resume functionality
-function togglePlay() {
-  if (audio.paused) {
-    audio.play();
-  } else {
-    audio.pause();
-  }
-}
 
 // Light/Dark Mode Toggle
 const modeToggle = document.getElementById("mode-toggle");
