@@ -42,29 +42,9 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// Initial setup
 displayCurrentTime();
 setInterval(displayCurrentTime, 1000); // Update time every second
 
-const audio = document.getElementById("background-music");
-
-// Example: Mute/unmute functionality
-function toggleMute() {
-  if (audio.muted) {
-    audio.muted = false;
-  } else {
-    audio.muted = true;
-  }
-}
-
-// Example: Pause/resume functionality
-function togglePlay() {
-  if (audio.paused) {
-    audio.play();
-  } else {
-    audio.pause();
-  }
-}
 
 // Light/Dark Mode Toggle
 const modeToggle = document.getElementById("mode-toggle");
@@ -89,131 +69,6 @@ if (savedMode === "dark") {
   document.body.classList.add("light-mode");
 }
 
-document.getElementById("EnterYourName").addEventListener("click", EnterName); // Call the function when the button is clicked
-
-let userName; // Declare the variable outside of the function
-
-function EnterName() {
-  userName = prompt("Enter your user name:"); // Assign a value to the variable inside the function
-  console.log(userName);
-  if (userName) {
-    document.getElementById("EnterYourName").innerHTML = "Change Name";
-    // Save to local storage
-    localStorage.setItem('savedUsername', userName);
-    console.log(savedUsername);
-    greetUser();
-  }
-}
-
-let savedUsername = localStorage.getItem('savedUsername');
-
-function greetUser() {
-  if (savedUsername) {
-    document.getElementById("greetUser").innerHTML = "Hello, " + savedUsername + "!";
-  }
-  if (savedUsername) {
-    document.getElementById("EnterYourName").innerHTML = "Change Name";
-  }
-}
-
-greetUser();
-
-console.log(savedUsername)
-
-document.getElementById("createShortcutForm").addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  var url = document.getElementById("shortcutUrl").value;
-  var name = document.getElementById("shortcutName").value;
-
-  // Add protocol if not provided
-  if (!url.startsWith("http://") && !url.startsWith("https://")) {
-    url = "https://" + url;
-  }
-
-  // Create and save the shortcut
-  var shortcuts = JSON.parse(localStorage.getItem("shortcuts")) || [];
-  shortcuts.push({ url: url, name: name });
-  localStorage.setItem("shortcuts", JSON.stringify(shortcuts));
-
-  // Append the link to the shortcuts section
-  renderShortcuts();
-
-  // Clear the form inputs
-  document.getElementById("shortcutUrl").value = "";
-  document.getElementById("shortcutName").value = "";
-});
-
-function renderShortcuts() {
-  var shortcuts = JSON.parse(localStorage.getItem("shortcuts")) || [];
-  var shortcutsContainer = document.getElementById("shortcuts");
-  shortcutsContainer.innerHTML = ""; // Clear current shortcuts
-
-  shortcuts.forEach((shortcut, index) => {
-    var link = document.createElement("a");
-    link.href = shortcut.url;
-    link.target = "_self";
-    link.textContent = shortcut.name;
-    shortcutsContainer.appendChild(link);
-
-    var deleteButton = document.createElement("button");
-    deleteButton.textContent = "Delete";
-    deleteButton.onclick = function () {
-      deleteShortcut(index);
-    };
-    shortcutsContainer.appendChild(deleteButton);
-    deleteButton.className = "deleteButton";
-
-    var newLine = document.createElement("br");
-    var newLine2 = document.createElement("br");
-    shortcutsContainer.appendChild(newLine);
-    shortcutsContainer.appendChild(newLine2);
-  });
-}
-
-function deleteShortcut(index) {
-  var shortcuts = JSON.parse(localStorage.getItem("shortcuts")) || [];
-  shortcuts.splice(index, 1);
-  localStorage.setItem("shortcuts", JSON.stringify(shortcuts));
-  renderShortcuts();
-}
-
-// Load shortcuts on page load
-document.addEventListener("DOMContentLoaded", function () {
-  renderShortcuts();
-});
-
-document.getElementById('searchEngine').addEventListener('change', saveSearchEngine);
-
-        // Save the selected search engine to local storage
-        function saveSearchEngine() {
-          const engine = document.getElementById('searchEngine').value;
-          localStorage.setItem('preferredSearchEngine', engine);
-          updateFormAction();
-      }
-
-      // Load the saved search engine from local storage
-      function loadSearchEngine() {
-          const savedEngine = localStorage.getItem('preferredSearchEngine');
-          if (savedEngine) {
-              document.getElementById('searchEngine').value = savedEngine;
-              updateFormAction();
-          }
-      }
-
-      // Update the form action based on the selected search engine
-      function updateFormAction() {
-          const savedEngine = localStorage.getItem('preferredSearchEngine');
-          const engine = document.getElementById('searchEngine').value;
-
-          document.querySelectorAll("form.search").forEach(form => {
-            form.action = engine;
-        });
-      }
-
-      // Load the preferred search engine when the page loads
-      window.onload = loadSearchEngine;
-
       document.querySelector("body").onscroll = () => {
         document.querySelector(".scrollDown").style.display = "none";
       }
@@ -221,3 +76,13 @@ document.getElementById('searchEngine').addEventListener('change', saveSearchEng
       document.getElementById('menu-button').addEventListener('click', function () {
         this.classList.toggle('openButton');
       });
+
+
+fetch('https://raw.githubusercontent.com/Alfonsoce11/Alfonsoce11/refs/heads/main/README.md')
+.then(response => response.text())
+.then(data => {
+  document.getElementById("aboutMe").innerHTML = data;
+});
+
+
+

@@ -1,16 +1,24 @@
-/* Reset and general styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
-#body123.body321 {
+/*
+:root {
+
+}*/
+
+body {
   font-family: Arial, sans-serif;
   background-color: #222;
   color: #ffffff;
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+a {
+  color: oklch(54.6% 0.245 262.881);
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 .container {
@@ -30,15 +38,9 @@ header h1 {
   margin-bottom: 10px;
 }
 
-#main1 {
-  display: flex;
+main {
   justify-content: space-between;
-  padding-top: 20px;
-}
-
-main section {
-  flex: 1;
-  margin-right: 20px;
+  padding: 20px;
 }
 
 #sidebar {
@@ -67,46 +69,6 @@ main section {
   margin-bottom: 10px;
 }
 
-#search {
-  margin-top: 20px;
-}
-
-#googleSearchBarAndInput {
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-
-#google_side {
-  width: 65%;
-  padding: 8px;
-  border: none;
-  background-color: #444;
-  color: #fff;
-  margin-bottom: 10px;
-  float: left;
-  height: 40px;
-}
-
-#searchEngine {
-  width: 100%;
-  height: 30px;
-  background: #444;
-  border-radius: 5px;
-  color: #fff;
-  text-align: center;
-}
-
-#search-results {
-  list-style-type: none;
-  padding: 0;
-}
-
-#search-results li {
-  padding: 8px;
-  background-color: #555;
-  margin-bottom: 5px;
-}
-
 #sidebar-toggle {
   position: fixed;
   background-color: #11111100;
@@ -126,67 +88,19 @@ main section {
   transition: left 0.3s ease-in-out;
 }
 
-#x_button {
-  float: right;
-  margin-bottom: 0px;
-  background-color: #ff0000;
-  color: #000;
-  padding: 5px 19px;
-  border: none;
-  cursor: pointer;
-  font-size: 23px;
-}
-
-/* Style the submit button */
-#googlebutton1 {
-  padding: 10px 20px;
-  background-color: #4285f4; /* Google blue */
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-#googleenter {
-  padding: 6px 10px;
-  background-color: #4285f4; /* Google blue */
-  border: none;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  width: 30%;
-  float: right;
-  height: 40px;
-}
-
-#Myswordlogo1234 {
+#Myswordlogo {
   float: left !important;
   margin-top: 5px; /* Adjust as needed */
   margin-bottom: 5px; /* Adjust as needed */
 }
 
+.hide {
+  display: none;
+}
+
 /* Hover effect for the submit button */
 input[type="submit"]:hover {
   background-color: #357ae8; /* Darker shade of Google blue */
-}
-
-#googlegoogle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0px; /* Adjust as needed */
-  margin-bottom: 30px; /* Adjust as needed */
-}
-
-/* Style the input field */
-#googlesearch1 {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  width: 300px; /* Adjust as needed */
 }
 
 /* Dark Mode Styles */
@@ -259,14 +173,6 @@ body.light-mode .project-tile {
   color: black;
   box-shadow: 0 0 10px 5px gray;
 }
-body.light-mode #welcome-section {
-  background: #f4f4f4;
-  color: black;
-}
-body.light-mode .greeting {
-  color: black;
-  background: #f4f4f4;
-}
 body.light-mode #main2 {
   background: white;
   color: black;
@@ -312,27 +218,9 @@ body.light-mode .menu-button .line {
   display: block !important;
 }
 
-.soundbutton {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  background-color: #222;
-  color: #fff;
-  border: none;
-  padding: 3px 6px;
-  float: right;
-}
 
-#EnterYourName {
-  
-}
-
-#MainSection1 {
+header {
   height: 100vh;
-}
-
-
-#credits {
-  bottom: 5px;
 }
 
 #shortcutUrl {
@@ -345,29 +233,14 @@ body.light-mode .menu-button .line {
   color: #fff;
 }
 
-#inputShortcutData {
-  background-color: #222;
-  color: #fff;
-  border: none;
-  padding: 3px 6px;
-}
-
-.deleteButton {
-  float: right !important;
-  background-color: #222;
-  color: #fff;
-  border: none;
-  padding: 3px 6px;
-}
-
 #myGitHub {
   text-align: center;
 }
 
 
-#navBar2 {
+#navBar {
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -376,11 +249,16 @@ body.light-mode .menu-button .line {
   background: darkslategrey;
   z-index: 100;
   align-items: center;
+  justify-content: right;
+  width: auto;
+  display: flex;
+  justify-content: right;
 }
 .nav-link {
   text-decoration: none;
   padding: 10px;
   margin: 5px;
+  border-radius: 10px;
 }
 .nav-link:first-of-type {
   margin-left: 20%;
@@ -388,21 +266,7 @@ body.light-mode .menu-button .line {
 .nav-link:hover {
   background: grey;
 }
-#navbar2 {
-  width: auto;
-  display: flex;
-  justify-content: left;
-}
 
-
-#welcome-section {
-  display: flex;
-  height: 100vh;
-  background: darkslategrey;
-  color: white;
-  align-items: center;
-  justify-content: center;
-}
 #main2 {
   background: black;
   min-height: 100px;
@@ -417,12 +281,13 @@ body.light-mode .menu-button .line {
   rem is relative to the root font-size and em is relative to the parent elements font size. 1rem is equal to root font size times 1. So 2rem would be: root font size * 2. And 2em would be parent font-size * 2.
   */
   text-align: center;
+  margin-top: 20px
 }
 
 
 
 
-@media (max-width: 740px) {
+@media (max-width: 744px) {
   .greeting {
     font-size: 5.8rem
   }
@@ -459,20 +324,15 @@ body.light-mode .menu-button .line {
 }
 #projects {
   margin-top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
 }
 #about {
   background: black;
-  margin-top: 0;
 }
 .project-tile {
   background: black;
   height: 300px;
   width: 300px;
-  box-shadow: 0 0 10px 5px white;
+  box-shadow: 0 0 5px 10px white;
   margin-bottom: 40px;
   margin-left: 20px;
   margin-right: 20px;
@@ -611,7 +471,7 @@ footer {
     opacity: 100%;
   }
   50% {
-    opacity: 0%;
+    opacity: 25%;
   }
   100% {
     opacity: 100%;
