@@ -1,20 +1,30 @@
-// Function to display current time
-function displayCurrentTime() {
-  const now = new Date();
-  const options = {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-    second: "numeric",
-  };
-  document.getElementById("current-time").textContent = now.toLocaleDateString(
-    "en-US",
-    options
-  );
-}
+const projects = [
+  {
+    title: "CodeBoard",
+    github: "https://github.com/Alfonsoce11/CodeBoard/",
+    demo: "https://cad.onshape.com/documents/9e5a6a3961387c025887fbae/w/aa8ec6e4d074e10e7ee03cf4/e/11f7a3639d4530a560166ad4?renderMode=0&uiState=685f30f229780e769f2f6943",
+    desc: "A keyboard specially made for coding with quicker access to characters commonly used for coding."
+  },
+  {
+    title: "lorem ipsum",
+    github: "lorem ipsum",
+    demo: "lorem ipsum",
+    desc: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+  }
+]
+
+const projectContainer = document.getElementById("projects");
+
+projects.forEach(projectData => {
+  const project = document.createElement("div");
+  project.className = "project p-8 bg-stone-950 m-8 w-100 border-5 border-red-700 rounded-xl";
+  project.innerHTML = `
+  <h3 class="text-3xl">${projectData.title}</h3><br>
+  <p>${projectData.desc}</p><br>
+  <a href="${projectData.github}"><button class="p-3 bg-red-700 rounded-xl cursor-pointer text-white">GitHub</button></a>
+  <a href="${projectData.demo}"><button class="p-3 bg-red-700 rounded-xl cursor-pointer text-white">Demo</button></a>`;
+  projectContainer.append(project);
+});
 
 // Toggle sidebar open/close
 function toggleSidebar() {
@@ -41,33 +51,6 @@ document.addEventListener("click", function (event) {
     
   }
 });
-
-displayCurrentTime();
-setInterval(displayCurrentTime, 1000); // Update time every second
-
-
-// Light/Dark Mode Toggle
-const modeToggle = document.getElementById("mode-toggle");
-modeToggle.addEventListener("click", () => {
-  const isDarkMode = document.body.classList.contains("dark-mode");
-  if (isDarkMode) {
-    document.body.classList.remove("dark-mode");
-    document.body.classList.add("light-mode");
-    localStorage.setItem("mode", "light");
-  } else {
-    document.body.classList.remove("light-mode");
-    document.body.classList.add("dark-mode");
-    localStorage.setItem("mode", "dark");
-  }
-});
-
-// Load the saved mode from local storage
-const savedMode = localStorage.getItem("mode");
-if (savedMode === "dark") {
-  document.body.classList.add("dark-mode");
-} else if (savedMode === "light") {
-  document.body.classList.add("light-mode");
-}
 
       document.querySelector("body").onscroll = () => {
         document.querySelector(".scrollDown").style.display = "none";
