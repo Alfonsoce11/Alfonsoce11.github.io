@@ -61,11 +61,4 @@ document.addEventListener("click", function (event) {
       });
 
 
-fetch('https://raw.githubusercontent.com/Alfonsoce11/Alfonsoce11/refs/heads/main/README.md')
-.then(response => response.text())
-.then(data => {
-  document.getElementById("aboutMe").innerHTML = data;
-});
-
-
 

@@ -1,8 +1,9 @@
-
-/*
 :root {
-
-}*/
+  --navbarBackground: #121212;
+  --headerBackground: #1F2020;
+  --mainBackground: #2e2e2e;
+  --footerBackground: #adadad;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -21,6 +22,10 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -28,7 +33,7 @@ h1 {
 }
 
 header {
-  background-color: #333;
+  background-color: var(--headerBackground);
   padding: 10px 0;
   text-align: center;
 }
@@ -41,6 +46,21 @@ header h1 {
 main {
   justify-content: space-between;
   padding: 20px;
+  background: var(--mainBackground);
+}
+
+footer {
+  background: var(--footerBackground);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: var(--navbarBackground);
+  z-index: 100;
 }
 
 #sidebar {
@@ -58,15 +78,6 @@ main {
 
 #sidebar.open {
   left: 0;
-}
-
-#sidebar nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#sidebar nav ul li {
-  margin-bottom: 10px;
 }
 
 #sidebar-toggle {
@@ -238,23 +249,6 @@ header {
   font-size: 2rem;
 }
 
-
-#navBar {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  width: 100vw;
-  background: darkslategrey;
-  z-index: 100;
-  align-items: center;
-  justify-content: right;
-  width: auto;
-  display: flex;
-  justify-content: right;
-}
 .nav-link {
   text-decoration: none;
   padding: 10px;
@@ -275,6 +269,7 @@ header {
   margin-bottom: 0;
   text-align: center;
 }
+
 .greeting {
   font-family: sans-serif;
   font-size: 6rem; 
@@ -284,10 +279,6 @@ header {
   text-align: center;
   margin-top: 20px
 }
-
-
-
-
 @media (max-width: 744px) {
   .greeting {
     font-size: 5.8rem
