@@ -55,6 +55,11 @@ footer {
 
 nav {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 25px;
+  gap: 10px;
   top: 0;
   left: 0;
   right: 0;
@@ -348,6 +353,17 @@ footer {
 }
 .project:hover {
   box-shadow: 0 22px 25px rgba(255, 255, 255, 0.15);
+}
+
+.icon {
+  opacity: 50%;
+  transition: 0.25s;
+  position: relative;
+  color: white;
+}
+
+.icon:hover {
+  opacity: 100%
 }
 
 .accountsHeading {
