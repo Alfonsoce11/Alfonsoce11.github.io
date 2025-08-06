@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: oklch(54.6% 0.245 262.881);
+  color: #6c63ff;
   cursor: pointer;
 }
 
@@ -107,11 +107,6 @@ nav {
 
 .hide {
   display: none;
-}
-
-/* Hover effect for the submit button */
-input[type="submit"]:hover {
-  background-color: #357ae8; /* Darker shade of Google blue */
 }
 
 /* Dark Mode Styles */
@@ -262,14 +257,6 @@ header {
   background: grey;
 }
 
-#main2 {
-  background: black;
-  min-height: 100px;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: center;
-}
-
 .greeting {
   font-family: sans-serif;
   font-size: 6rem; 
@@ -316,6 +303,9 @@ header {
 }
 #projects {
   margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 #about {
   background: black;
@@ -353,7 +343,11 @@ footer {
 }
 
 .project {
-  /* Project styles */
+  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.05);
+  transition: box-shadow 0.75s ease;
+}
+.project:hover {
+  box-shadow: 0 22px 25px rgba(255, 255, 255, 0.15);
 }
 
 .accountsHeading {

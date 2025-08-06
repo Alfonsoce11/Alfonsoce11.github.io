@@ -1,9 +1,33 @@
 const projects = [
   {
     title: "CodeBoard",
-    github: "https://github.com/Alfonsoce11/CodeBoard/",
+    img: "https://file.garden/ZXPZOz_dI1vYUjXR/codeBoard.png",
     demo: "https://cad.onshape.com/documents/9e5a6a3961387c025887fbae/w/aa8ec6e4d074e10e7ee03cf4/e/11f7a3639d4530a560166ad4?renderMode=0&uiState=685f30f229780e769f2f6943",
     desc: "A keyboard specially made for coding with quicker access to characters commonly used for coding."
+  },
+  {
+    title: "lorem ipsum",
+    github: "lorem ipsum",
+    demo: "lorem ipsum",
+    desc: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+  },
+  {
+    title: "lorem ipsum",
+    github: "lorem ipsum",
+    demo: "lorem ipsum",
+    desc: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+  },
+  {
+    title: "lorem ipsum",
+    github: "lorem ipsum",
+    demo: "lorem ipsum",
+    desc: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+  },
+  {
+    title: "lorem ipsum",
+    github: "lorem ipsum",
+    demo: "lorem ipsum",
+    desc: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
   },
   {
     title: "lorem ipsum",
@@ -20,6 +44,7 @@ projects.forEach(projectData => {
   project.className = "project p-8 bg-stone-950 m-8 w-100 border-5 border-red-700 rounded-xl";
   project.innerHTML = `
   <h3 class="text-3xl">${projectData.title}</h3><br>
+  ${projectData.img ? `<img src="${projectData.img}" alt="${projectData.title} image">` : ""}
   <p>${projectData.desc}</p><br>
   <a href="${projectData.github}"><button class="p-3 bg-red-700 rounded-xl cursor-pointer text-white">GitHub</button></a>
   <a href="${projectData.demo}"><button class="p-3 bg-red-700 rounded-xl cursor-pointer text-white">Demo</button></a>`;
