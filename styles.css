@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #222;
+  background-color: var(--mainBackground);
   color: #ffffff;
   line-height: 1.6;
   overflow-x: hidden;
@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .container {
@@ -35,6 +35,9 @@ h2 {
 header {
   background-color: var(--headerBackground);
   padding: 10px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   text-align: center;
 }
 
@@ -59,13 +62,13 @@ nav {
   align-items: center;
   justify-content: right;
   padding-right: 25px;
-  gap: 10px;
   top: 0;
   left: 0;
   right: 0;
   height: 50px;
   background: var(--navbarBackground);
   z-index: 100;
+  border-bottom: solid 1px grey;
 }
 
 #sidebar {
@@ -104,119 +107,9 @@ nav {
   transition: left 0.3s ease-in-out;
 }
 
-#Myswordlogo {
-  float: left !important;
-  margin-top: 5px; /* Adjust as needed */
-  margin-bottom: 5px; /* Adjust as needed */
-}
-
 .hide {
   display: none;
 }
-
-/* Dark Mode Styles */
-body.dark-mode {
-  background-color: #222 !important;
-  color: #ffffff !important;
-}
-
-body.dark-mode .sidebar {
-  background-color: #111 !important;
-  color: #ffffff !important;
-}
-
-body.dark-mode .header {
-  background-color: #333 !important;
-  color: #ffffff !important;
-}
-
-body.dark-mode .credits {
-  color: #ffffff !important;
-}
-
-body.dark-mode #sidebar-toggle {
-  color: #fff;
-}
-body.dark-mode .menu-button .line {
-  background: #fff;
-}
-
-/* Light Mode Styles */
-body.light-mode {
-  background-color: #ffffff !important;
-  color: #000000 !important;
-}
-
-
-body.light-mode .sidebar {
-  /* background: grey !important; */
-  color: #ffffff !important;
-} 
-
-body.light-mode .header {
-  background-color: #f4f4f4 !important;
-  color: #000000 !important;
-}
-
-body.light-mode .credits {
-  color: #000000 !important;
-}
-
-body.light-mode #sidebar-toggle {
-  color: #000000;
-}
-body.light-mode #about {
-  color: white;
-}
-
-body.light-mode #projects {
-  background: white;
-  color: black;
-}
-
-body.light-mode #about {
-  background: white;
-  color: black;
-}
-
-body.light-mode .project-tile {
-  background: white;
-  color: black;
-  box-shadow: 0 0 10px 5px gray;
-}
-body.light-mode #main2 {
-  background: white;
-  color: black;
-}
-body.light-mode #navBar2 {
-  background: #f4f4f4;
-}
-body.light-mode #navbar2 {
-  background: #f4f4f4;
-}
-body.light-mode #footer {
-  background: #f4f4f4;
-}
-body.light-mode #about {
-  background: white;
-  color: black;
-}
-body.light-mode #contact {
-  background: #f4f4f4;
-  color: black;
-}
-body.light-mode .profile-link {
-  background: #f4f4f4;
-  color: black;
-}
-body.light-mode #aboutMeSection1 {
-  background: white;
-  color: black;
-}
-body.light-mode .menu-button .line {
-  background: black;
-}
-
 
 #mode-toggle {
   background-color: #222;
@@ -229,11 +122,6 @@ body.light-mode .menu-button .line {
   display: block !important;
 }
 
-
-header {
-  height: 100vh;
-}
-
 #shortcutUrl {
   background-color: #444;
   color: #fff;
@@ -244,19 +132,20 @@ header {
   color: #fff;
 }
 
-#myGitHub {
-  text-align: center;
-  font-size: 2rem;
-}
-
 .nav-link {
   text-decoration: none;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: white;
+  height: 100%;
+  background: #000000;
+  border-left: solid 0.5px grey;
+  border-right: solid 0.5px grey;
+  line-height: 250%;
 }
-.nav-link:first-of-type {
-  margin-left: 20%;
+.nav-link:nth-last-child(2) {
+  border-right: solid 1px grey;
+  margin-right: 20px;
 }
 .nav-link:hover {
   background: grey;
@@ -269,43 +158,8 @@ header {
   rem is relative to the root font-size and em is relative to the parent elements font size. 1rem is equal to root font size times 1. So 2rem would be: root font size * 2. And 2em would be parent font-size * 2.
   */
   text-align: center;
-  margin-top: 20px
 }
-@media (max-width: 744px) {
-  .greeting {
-    font-size: 5.8rem
-  }
-}
-@media (max-width: 700px) {
-  .greeting {
-    font-size: 5.5rem;
-  }
-}
-@media (max-width: 650px) {
-  .greeting {
-    font-size: 5rem;
-  }
-}
-@media (max-width: 570px) {
-  .greeting {
-    font-size: 4.5rem;
-  }
-}
-@media (max-width: 520px) {
-  .greeting {
-    font-size: 4rem;
-  }
-}
-@media (max-width: 460px) {
-  .greeting {
-    font-size: 3.5rem;
-  }
-}
-@media (max-width: 410px) {
-  .greeting {
-    font-size: 3rem;
-  }
-}
+
 #projects {
   margin-top: 0;
   display: flex;
@@ -318,15 +172,18 @@ header {
 
 footer {
   background: darkslategrey;
-}
-#contact {
-  background: darkslategrey;
-  min-height: 100px;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+}
+#social-links {
+  display: flex;
+  width: fit-content;
+  justify-content: right;
+  gap: 25px;
+  align-items: bottom; 
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 25px;
+  margin-left: auto;
 }
 @keyframes enlargeText {
   0% {
@@ -348,11 +205,10 @@ footer {
 }
 
 .project {
-  box-shadow: 0 8px 15px rgba(255, 255, 255, 0.05);
   transition: box-shadow 0.75s ease;
 }
 .project:hover {
-  box-shadow: 0 22px 25px rgba(255, 255, 255, 0.15);
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
 }
 
 .icon {
