@@ -11,8 +11,7 @@ const projects = [
     github: "",
     demo: "https://cad.onshape.com/documents/e5149cefcc6fcf6e46e5d30a/w/83f9b9912ecc8fbebcb307da/e/7d9534075d7e9d5a90a8b9f2",
     img: "https://file.garden/ZXPZOz_dI1vYUjXR/mouse",
-    desc: "A mouse I designed using with the bambu lab mouse kit. <a href='https://us.store.bambulab.com/products/wireless-mouse-components-kit-002' target='_blank'>Here is the kit it uses.</a>",
-    youtube: "youtubelink"
+    desc: "A mouse I designed using with the bambu lab mouse kit. <a href='https://us.store.bambulab.com/products/wireless-mouse-components-kit-002' target='_blank'>Here is the kit it uses.</a>"
   },
 ]
 
