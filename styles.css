@@ -315,6 +315,8 @@ nav {
     border: none;
     border-radius: 0;
     box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
   }
   .project:hover {
     box-shadow: none;
