@@ -69,6 +69,7 @@ main {
 footer {
   background: var(--footerBackground);
   display: flex;
+  flex-direction: row;
 }
 
 nav {
@@ -249,6 +250,11 @@ nav {
   opacity: 100%
 }
 
+.project-desc {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
 .accountsHeading {
   padding-top: 40px
 }
@@ -312,5 +318,17 @@ nav {
   }
   .project:hover {
     box-shadow: none;
+  }
+  footer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #social-links {
+    padding: 10px;
+    margin: 0;
+  }
+  #footer-text {
+    margin: 0;
+    text-align: center;
   }
 }
