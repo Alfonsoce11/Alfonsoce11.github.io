@@ -8,20 +8,26 @@ const projects = [
   },
   {
     title: "Mouse",
-    github: "",
+    github: "https://github.com/Alfonsoce11/Mouse",
     demo: "https://cad.onshape.com/documents/e5149cefcc6fcf6e46e5d30a/w/83f9b9912ecc8fbebcb307da/e/7d9534075d7e9d5a90a8b9f2",
     img: "https://file.garden/ZXPZOz_dI1vYUjXR/mouse",
     desc: "A mouse I designed using with the bambu lab mouse kit. <a href='https://us.store.bambulab.com/products/wireless-mouse-components-kit-002' target='_blank'>Here is the kit it uses.</a>"
   },
+  {
+    title: "Monty Hall Problem Simulator",
+    github: "https://github.com/Alfonsoce11/MontyHallProblem",
+    demo: "https://alfonsoce11.dev/MontyHallProblem/",
+    desc: "A website I made about the Monty Hall Problem. It has a simulator and my explanation of why its true. I made it because I thought it was really interesting how we can get a quick intuitive answer that we are so sure of and then be proved wrong by simple logic."
+  }
 ]
 
 const projectContainer = document.getElementById("projects");
 
 projects.forEach(projectData => {
   const project = document.createElement("div");
-  project.className = "project m-8 rounded-xl";
+  project.className = "project rounded-xl";
   project.innerHTML = `
-  <h3 class="text-3xl">${projectData.title}</h3><br>
+  <h3>${projectData.title}</h3><br>
   ${projectData.img ? `<img src="${projectData.img}" alt="${projectData.title} image" class="project-image">` : ""}
   <p>${projectData.desc}</p><br>
   <div class="project-buttons-container">

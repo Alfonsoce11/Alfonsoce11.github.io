@@ -7,6 +7,10 @@
   --font: 'Boogaloo';
 }
 
+html {
+  font-size: 18px;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: var(--mainBackground);
@@ -26,12 +30,20 @@ a {
 }
 
 h1 {
-  font-size: 6rem; 
+  font-size: 4rem; 
   text-align: center;
 }
 
 h2 {
   font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 header {
@@ -179,9 +191,6 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-#about {
-  background: black;
-}
 
 #footer-text {
   display: flex;
@@ -220,6 +229,7 @@ nav {
   border: solid 1px #ffffff55;
   width: 400px;
   padding: 32px;
+  margin: 36px;
 }
 .project:hover {
   box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.5);
@@ -250,24 +260,6 @@ nav {
 .projectsLink:hover {
   text-decoration: none;
   color: white;
-}
-#about {
-  margin: auto; /* Center the content horizontally */
-  width: 70%; 
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-@media (max-width: 700px) {
-  #about {
-    width: 95%;
-  }
-}
-
-
-#aboutMeSection1 {
-  position: absolute;
-  top: 100vh;
-  background: black;
 }
 
 
