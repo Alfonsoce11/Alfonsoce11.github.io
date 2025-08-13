@@ -160,6 +160,7 @@ nav {
   justify-content: space-evenly;
   background: #000000/*#C10009*/;
   border: 0.01px solid #ffffff30;
+  align-items: center;
 }
 .project-button:hover {
   transform: translateY(-5px);
