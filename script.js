@@ -40,4 +40,11 @@ projects.forEach(projectData => {
 });
 
 
+const scrollDown = document.getElementById("scrollDown");
+const main = document.getElementById("main");
+
+scrollDown.addEventListener('click', function() {
+main.scrollIntoView({ behavior: "smooth" });
+});
+
 

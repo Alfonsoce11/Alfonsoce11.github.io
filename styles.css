@@ -65,6 +65,7 @@ main {
   justify-content: space-between;
   padding: 20px;
   background: var(--mainBackground);
+  scroll-margin-top: 50px;
 }
 
 footer {
@@ -88,44 +89,11 @@ nav {
   border-bottom: solid 1px grey;
 }
 
-#sidebar {
-  position: fixed;
-  top: 0;
-  left: -270px;
-  width: 270px;
-  height: 100%;
-  background-color: #111;
-  padding-top: 20px;
-  transition: left 0.3s ease-in-out; /* This will make the sidebar slide in and out smoothly */
-  overflow: auto;
-  z-index: 500;
-}
-
-#sidebar.open {
-  left: 0;
-}
-
-#sidebar-toggle {
-  position: fixed;
-  background-color: #11111100;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  top: -10px;
-  left: 5px;
-  transition: left 0.3s ease-in-out;
-  z-index: 9000;
-  font-size: 40px;
-  display: block !important;
-  visibility: visible !important;
-}
-#sidebar-toggle.sidebar-toggle-close {
-  left: 275px;
-  transition: left 0.3s ease-in-out;
-}
-
-.hide {
-  display: none;
+#header-stuff-container {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav-link {
@@ -275,7 +243,7 @@ display: none;
 }
 
 
-.scrollDown {
+#scrollDown {
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -286,10 +254,12 @@ display: none;
   border-top: 3px solid white;
   border-radius: 50% 50% 0 0;
   padding-top: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-bottom: 7.5px;
   width: auto;
+  background: linear-gradient(180deg,rgba(25, 25, 25, 1) 0%, rgba(50, 50, 50, 1) 100%);
+  cursor: pointer;
 }
 
 .scrollDownParagraph {
