@@ -18,6 +18,13 @@ const projects = [
     github: "https://github.com/Alfonsoce11/MontyHallProblem",
     demo: "https://alfonsoce11.dev/MontyHallProblem/",
     desc: "A website I made about the Monty Hall Problem. It has a simulator and my explanation of why its true. I made it because I thought it was really interesting how we can get a quick intuitive answer that we are so sure of and then be proved wrong by simple logic."
+  },
+  {
+    title: "Scrambler 2026",
+	github: "https://github.com/Alfonsoce11/Scrambler-2026",
+	demo: "https://cad.onshape.com/documents/90fac6ecb86bf65c85df9c2e/w/f3275407224a3fca29684cf2/e/d2b8c82690f745d164417508?renderMode=0&uiState=692b6d7dac0ede99e7380050",
+	img: "https://file.garden/ZXPZOz_dI1vYUjXR/ETV-Design-img-no-background.png",
+	desc: "My scrambler design files for science olympiad 2026."
   }
 ]
 
