@@ -91,10 +91,10 @@ nav {
 }
 
 #header-stuff-container {
-  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: auto;
 }
 
 .nav-link {
@@ -245,8 +245,6 @@ display: none;
 
 
 #scrollDown {
-  position: absolute;
-  bottom: 0;
   text-align: center;
   justify-self: center;
   width: 100%;
@@ -261,6 +259,7 @@ display: none;
   width: auto;
   background: linear-gradient(180deg,rgba(25, 25, 25, 1) 0%, rgba(50, 50, 50, 1) 100%);
   cursor: pointer;
+  margin-top: auto;
 }
 
 .scrollDownParagraph {
