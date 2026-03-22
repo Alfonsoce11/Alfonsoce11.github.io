@@ -55,7 +55,7 @@ header {
   background-size: cover;
   padding: 0;
   /* height: calc(100vh - 50px); */
-  height: 100vh;
+  height: 100dvh; /* Dynamic Viewport Height */
   display: flex;
   flex-direction: column;
   align-items: center;
